@@ -1,0 +1,17 @@
+.TaskColumnContainer {
+    height: 100%;
+    width: 25%;
+    border: 1px solid darkgray;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskColumnContainer_CardsScrollBlock {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.TaskColumnContainer > .TaskCard:not(:last-child) {
+    margin-bottom: 0.3rem;
+}

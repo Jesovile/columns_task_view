@@ -1,0 +1,9 @@
+.FilterPanel {
+    padding: 1rem;
+    border: 1px solid darkgray;
+    margin-bottom: 1.5rem;
+}
+
+.FilterPanel > *:not(:last-child) {
+    margin-right: 2rem;
+}

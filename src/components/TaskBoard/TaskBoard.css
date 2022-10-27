@@ -1,0 +1,19 @@
+.TaskBoard {
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskBoard_Header {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.TaskBoard_ColumnsSlot {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+}

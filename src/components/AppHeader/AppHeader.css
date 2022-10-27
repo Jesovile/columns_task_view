@@ -1,0 +1,9 @@
+.AppHeader {
+    padding: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.AppHeader_Title {
+    text-align: center;
+    margin: 0;
+}
