@@ -1,4 +1,5 @@
 import './App.css';
+import '../root.css';
 import AppHeader from "../components/AppHeader";
 import TaskBoard from "../components/TaskBoard";
 import {useEffect, useState} from "react";

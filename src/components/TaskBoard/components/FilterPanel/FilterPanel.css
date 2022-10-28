@@ -1,9 +1,42 @@
 .FilterPanel {
-    padding: 1rem;
-    border: 1px solid darkgray;
-    margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border: 1px solid var(--white);
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius-low);
 }
 
 .FilterPanel > *:not(:last-child) {
-    margin-right: 2rem;
+  margin-right: 2rem;
+}
+
+.FilterPanel_Label {
+  font-weight: 900;
+}
+.FilterPanel_Input {
+  padding: 0.125rem 0.125rem 0.125rem 1.125rem;
+  /* font-size: 1rem; */
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-low);
+}
+.FilterPanel_Input:hover {
+  border: none;
+  outline: none;
+}
+.FilterPanel_Button {
+  padding: 0.125rem 1.125rem 0.125rem 1.125rem;
+  /* font-size: 0.875rem; */
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-low);
+  transition: background-color ease-in-out 200ms;
+}
+.FilterPanel_Button:hover {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
 }
