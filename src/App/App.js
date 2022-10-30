@@ -4,7 +4,6 @@ import TaskBoard from "../components/TaskBoard";
 import {useEffect, useState} from "react";
 import {getTasks} from "../api/TaskApi";
 
-import ErrorBoundary from '../test_utils/ErrorBoundary/HighOrderComponents'
 
 function App() {
     const [tasks, setTasks] = useState([]);
@@ -26,4 +25,4 @@ function App() {
   );
 }
 
-export default ErrorBoundary(App);
+export default App;
