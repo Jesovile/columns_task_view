@@ -4,6 +4,7 @@ import TaskBoard from "../components/TaskBoard";
 import {useEffect, useState} from "react";
 import {getTasks} from "../api/TaskApi";
 
+
 function App() {
     const [tasks, setTasks] = useState([]);
     useEffect(() => {
@@ -12,6 +13,7 @@ function App() {
                 setTasks(response);
             });
     }, []);
+
 
   return (
     <div className="App">
