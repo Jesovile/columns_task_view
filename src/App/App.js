@@ -1,9 +1,10 @@
 import './App.css';
-import '../root.css';
 import AppHeader from "../components/AppHeader";
 import TaskBoard from "../components/TaskBoard";
 import {useEffect, useState} from "react";
 import {getTasks} from "../api/TaskApi";
+
+import ErrorBoundary from '../test_utils/ErrorBoundary/HighOrderComponents'
 
 function App() {
     const [tasks, setTasks] = useState([]);
@@ -13,6 +14,7 @@ function App() {
                 setTasks(response);
             });
     }, []);
+
 
   return (
     <div className="App">
@@ -24,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default ErrorBoundary(App);
