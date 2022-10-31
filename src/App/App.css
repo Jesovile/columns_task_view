@@ -1,5 +1,19 @@
+body {
+  background: var(--blue);
+  background: linear-gradient(
+    to right,
+    #4503fb 0%,
+    #207cca 34%,
+    #2989d8 71%,
+    #0587ec 100%
+  );
+  color: var(--white);
+}
+
 .App {
   width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
