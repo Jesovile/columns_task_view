@@ -1,17 +1,67 @@
-*, :before, :after {
-  box-sizing: border-box;
+:root {
+    --blue: #1e5799;
+    --white: #ffffff;
+    --teal: #2dd4bf;
+    --yellow: #f59e0b;
+    --fuchsia: #d946ef;
+    --blue-light: #60a5fa;
+
+    --border-radius-low: 0.5rem;
+    --border-radius-mid: 1.5rem;
+    --border-radius-high: 2.5rem;
+
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
+
+html::selection {
+    background-color: var(--fuchsia);
+    color: red;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #0587ec;
+}
+
+html::-webkit-scrollbar-track-piece {
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--yellow);
+}
+
+/*
+    ## Media queries used in the application ##
+
+    @media (min-width: 640px) {}
+    @media (min-width: 768px) {}
+    @media (min-width: 1024px) {}
+    @media (min-width: 1280px) {}
+    @media (min-width: 1536px) {}
+*/

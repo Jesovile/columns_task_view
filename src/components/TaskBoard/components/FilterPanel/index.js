@@ -18,6 +18,7 @@ const FilterPanel = (props) => {
         By Title:
       </label>
       <input
+        placeholder="task ..."
         className="FilterPanel_Input"
         id="FilterPanel_input"
         value={filterParams.title}

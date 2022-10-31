@@ -1,33 +1,33 @@
 .AppHeader {
-  padding: 2rem;
-  border-bottom: 1px solid var(--test);
+    padding: 2rem;
+    border-bottom: 1px solid var(--blue-light);
 }
 
 .AppHeader_Title {
-  font-weight: 900;
-  text-align: center;
-  width: max-content;
-  margin: 0 auto;
-  text-transform: uppercase;
-  background: linear-gradient(
-    219deg,
-    var(--white) 19%,
-    transparent 19%,
-    transparent 20%,
-    var(--teal) 20%,
-    var(--teal) 39%,
-    transparent 39%,
-    transparent 40%,
-    var(--yellow) 40%,
-    var(--yellow) 59%,
-    transparent 59%,
-    transparent 60%,
-    var(--color-4) 60%,
-    var(--color-4) 79%,
-    transparent 79%,
-    transparent 80%,
-    var(--color-5) 80%
-  );
-  background-clip: text;
-  color: transparent;
+    font-weight: 900;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background: linear-gradient(
+        219deg,
+        var(--white) 19%,
+        transparent 19%,
+        transparent 20%,
+        var(--teal) 20%,
+        var(--teal) 39%,
+        transparent 39%,
+        transparent 40%,
+        var(--yellow) 40%,
+        var(--yellow) 59%,
+        transparent 59%,
+        transparent 60%,
+        var(--color-4) 60%,
+        var(--color-4) 79%,
+        transparent 79%,
+        transparent 80%,
+        var(--color-5) 80%
+    );
+    background-clip: text;
+    color: transparent;
 }

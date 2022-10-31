@@ -3,40 +3,85 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  border: 1px solid var(--white);
+  border: 1px solid var(--blue-light);
   margin-bottom: 1.5rem;
   border-radius: var(--border-radius-low);
 }
 
-.FilterPanel > *:not(:last-child) {
-  margin-right: 2rem;
+.FilterPanel > * {
+  margin-right: auto;
+  margin-bottom: 0.5rem;
 }
 
 .FilterPanel_Label {
   font-weight: 900;
+  width: 100%;
 }
+
 .FilterPanel_Input {
+  font-weight: 600;
   padding: 0.125rem 0.125rem 0.125rem 1.125rem;
-  /* font-size: 1rem; */
   border: none;
   outline: none;
+  width: 100%;
   border-radius: var(--border-radius-low);
 }
+
 .FilterPanel_Input:hover {
   border: none;
   outline: none;
 }
+
 .FilterPanel_Button {
+  font-style: italic;
   padding: 0.125rem 1.125rem 0.125rem 1.125rem;
-  /* font-size: 0.875rem; */
   border: none;
   outline: none;
+  width: 100%;
   border-radius: var(--border-radius-low);
   transition: background-color ease-in-out 200ms;
 }
+
 .FilterPanel_Button:hover {
   cursor: pointer;
   border: none;
   outline: none;
   background-color: var(--yellow);
+}
+
+@media (min-width: 640px) {
+  .FilterPanel {
+    justify-content: space-around;
+  }
+
+  .FilterPanel > * {
+    margin-bottom: initial;
+    margin-right: initial;
+  }
+
+  .FilterPanel > *:not(:last-child) {
+    margin-bottom: auto;
+  }
+
+  .FilterPanel_Label {
+    width: auto;
+  }
+
+  .FilterPanel_Input {
+    width: auto;
+  }
+
+  .FilterPanel_Button {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .FilterPanel {
+    justify-content: start;
+  }
+
+  .FilterPanel > *:not(:last-child) {
+    margin-right: 2rem;
+  }
 }

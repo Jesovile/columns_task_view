@@ -1,17 +1,22 @@
 .TaskColumnContainer {
-    height: 100%;
-    width: 25%;
-    border: 1px solid darkgray;
-    padding: 0.3rem;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius-low);
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
 }
 
-.TaskColumnContainer_CardsScrollBlock {
-    flex-grow: 1;
-    overflow-y: scroll;
+.TaskColumnContainer_CardsScrollBlock > *:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .TaskColumnContainer > .TaskCard:not(:last-child) {
     margin-bottom: 0.3rem;
+}
+
+@media (min-width: 640px) {
+    .TaskColumnContainer {
+        width: calc(100% / 3);
+    }
 }
